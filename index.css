@@ -11,6 +11,7 @@ body {
 main section.gameContainer {
     display: grid;
     grid-template-columns: 8fr 1fr;
+    /* grid-template-rows: 2fr; */
 }
 main section.gameContainer .toolsGame{
     height: fit-content;
@@ -18,27 +19,34 @@ main section.gameContainer .toolsGame{
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+    background-color: #3a3031;
+
 }
 main section.gameContainer .toolsGame div.box{
     text-align: center;
     color: #fff;
     border: solid 1px #fff;
     padding: 10px;
-    margin: 10px;
-    font-size: 10px;
-    width: 30%;
+    margin: 10px auto;
+    /* font-size: 13px; */
+    width: 55%;
     cursor: pointer;
 }
+main section.gameContainer .toolsGame div.box p{
+    font-size: 40%;
+}
 main section.gameContainer .toolsGame div img{
-    width: 100%;
+    width: 50%;
 }
 main section.gameContainer .toolsGame div.floatBoxs{
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: repeat(3,1fr);
-  grid-gap: 4px;
+  /* grid-gap: 4px; */
   text-align: center;
-  margin: 10px;
+  margin: 10px auto;
+  width: 80%;
+  grid-gap: 10px;
 }
 
 main section.gameContainer .toolsGame div.floatBoxs div.flotImgContainer{
@@ -49,7 +57,7 @@ main section.gameContainer .toolsGame div.floatBoxs div.flotImgContainer span.nu
 {
     position: absolute;
     bottom: 12px;
-    left: 14px;
+    left: 0;
     color: #fff;
 }
 main section.gameContainer .toolsGame div.floatBoxs img{
@@ -58,10 +66,22 @@ main section.gameContainer .toolsGame div.floatBoxs img{
     border: #fff solid 1px;
 }
 
-main div.toolsGame {
-    height: 100vh;
-    background-color: #3a3031;
+.btnContainer{
+    width: 100%;
+    
 }
+.btnContainer button{
+    display: block;
+    width: 80%;
+    padding: 10px;
+    background-color: transparent;
+    color: #fff;
+    border: #fff solid 1px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+/* end Tools Game style */
 
 main section.gameContainer .screenGame .sky {
 
@@ -75,7 +95,7 @@ main section.gameContainer .screenGame .flate {
     height: fit-content;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
 }
 
 .first {
