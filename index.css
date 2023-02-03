@@ -1,0 +1,131 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #96d6f2;
+}
+
+main section.gameContainer {
+    display: grid;
+    grid-template-columns: 8fr 1fr;
+}
+main section.gameContainer .toolsGame{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+main section.gameContainer .toolsGame div.box{
+    text-align: center;
+    color: #fff;
+    border: solid 1px #fff;
+    padding: 10px;
+    margin: 10px;
+    font-size: 10px;
+    width: 30%;
+    cursor: pointer;
+}
+main section.gameContainer .toolsGame div img{
+    width: 100%;
+}
+main section.gameContainer .toolsGame div.floatBoxs{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  grid-gap: 4px;
+  text-align: center;
+  margin: 10px;
+}
+
+main section.gameContainer .toolsGame div.floatBoxs div.flotImgContainer{
+    position: relative;
+    cursor: pointer;
+}
+main section.gameContainer .toolsGame div.floatBoxs div.flotImgContainer span.numFlot
+{
+    position: absolute;
+    bottom: 12px;
+    left: 14px;
+    color: #fff;
+}
+main section.gameContainer .toolsGame div.floatBoxs img{
+    width: 100%;
+    text-align: center;
+    border: #fff solid 1px;
+}
+
+main div.toolsGame {
+    height: 100vh;
+    background-color: #3a3031;
+}
+
+main section.gameContainer .screenGame .sky {
+
+    height: 60vh;
+    width: 100%;
+}
+
+main section.gameContainer .screenGame .flate {
+    /* background-color: #73523b; */
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.first {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(15, 1fr);
+}
+
+.first div {
+    width: 100%;
+    height: 100%;
+}
+
+.seconde {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(15, 1fr);
+}
+
+.seconde div {
+    width: 100%;
+    height: 100%;
+}
+
+.thred {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(15, 1fr);
+}
+
+
+.thred div {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+main section.gameContainer .screenGame .flate img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main section.gameContainer .screenGame .flate .first div.imgContanier:nth-child(4) img {
+    display: none;
+}
